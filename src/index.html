@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head><!-- siempre habra un solo cuerpo y adentro se cargan todas las pseudopafinas .f7.html de pages -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+
+  <meta name="theme-color" content="#007aff">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>EstacionaPy</title>
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="static/icons/apple-touch-icon.png">
+  <link rel="icon" href="static/icons/favicon.png">
+   <link rel="stylesheet" href="css/icons.css"/>
+   <link rel="stylesheet" href="css/estilos.css"/>
+
+  <!-- built styles file will be auto injected -->
+</head>
+<body><!--  -->
+  <div id="app">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+    
+     <!-- Este panel siempre sera el mismo para todas las paginas .f7.html --> 
+    <!-- Panel izquierdo con efecto que se esconde -->
+    <div class="panel panel-left panel-cover"><!-- hago que se esconda hacia la izquierda -->
+        <div class="navbar" style="background-color: #13BC78"><!-- cambio el color de la barra -->
+            <div class="title sliding"><font color="white"><h3> EstacionaPy</h3></font></div>
+        </div>
+        
+        <div class="list">
+            <ul> <!-- creo una lista para que se acomode bien -->
+                 <li>
+                    <div class="item-content">
+                        <div class="item-media"><i class="f7-icons">person_round</i></div><!--  icono antes de nombre -->
+                        <div class="item-inner">
+                            <a href="/perfil/" class="item-content item-link">Perfil</a> <!--  nombre del boton con la ruta a especificar que es "/perfil/"-->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media"><i class="f7-icons">add_round</i></div>
+                        <div class="item-inner">
+                            <a href="/estacionar/" class="item-content item-link">Estacionar</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                 <li>
+                    <div class="item-content">
+                        <div class="item-media"><i class="f7-icons">alert</i></div>
+                        <div class="item-inner">
+                            <a href="/infraccion/" class="item-content item-link">Infraccion</a>
+                        </div>
+                    </div>
+                </li>
+                 <li>
+                    <div class="item-content">
+                        <div class="item-media"><i class="f7-icons">alert</i></div>
+                        <div class="item-inner">
+                            <a href="/transito/" class="item-content item-link">Transito</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+          
+        
+            <div class="list"> <!-- creo otra lista de la hora de entrada y la de salida o un contador -->
+                <ul>
+                    <li class="item-content">
+                        <h3> Horario</h3>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">Agregar: <span id="oranges-count"></span></div>
+                            <div class="item-after">
+                                <div class="stepper stepper-init stepper-small stepper-raised" data-value-el="#oranges-count">
+                                    <div class="stepper-button-minus"></div>
+                                    <div class="stepper-button-plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+         
+         <!-- boton de salir que me lleva al login y quiero que se desloguee -->
+          <a href="//" class="button button-outline item-content item-link">Salir
+          </a> 
+        </div>
+          
+      
+   
+      
+     <!--  --> 
+      
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main view-init safe-areas" data-url="/"></div>
+    
+  </div>
+</body>
+</html>

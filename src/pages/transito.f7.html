@@ -1,0 +1,202 @@
+<template>
+<div class="page" data-name="about">
+  <div class="navbar" style="background-color: #13BC78">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <font color="white">
+          <i class="icon icon-back"></i>
+            <span class="if-not-md">Back</span></font>
+        </a>
+      </div>
+        
+      <div class="title"><font color="white"><h3> Transito</h3></font></div>
+    </div>
+  </div>
+    
+    
+  <div class="page-content"><!-- Contenido de la pagina -->  
+    <div class="page"><!-- Creo un page --> 
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left"><!--   Se desliza hacia la izquierda --> 
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="if-not-md">Back</span> <!-- Boton de regreso --> 
+        </a>
+      </div>
+      <div class="title">Swipeable Tabs</div>
+    </div>
+  </div>
+  <div class="toolbar tabbar toolbar-bottom"><!-- Barra de abajo --> 
+    <div class="toolbar-inner"><!-- Elementos de la barra que son multar, consultas y otros --> 
+      <a href="#tab-1" class="tab-link tab-link-active">Multar</a>
+      <a href="#tab-2" class="tab-link">Consulta</a>
+      <a href="#tab-3" class="tab-link">Otros</a>
+    </div>
+  </div>
+        
+  <div class="tabs-swipeable-wrap">
+    <div class="tabs">
+    <!-- Pagina para multar gente jeje -->     
+      <div id="tab-1" class="page-content tab tab-active">
+        <div class="block">
+          <font align="center"><h2>Generar Multas</h2></font>
+           <ul>
+                    <div class="item-inner">
+                    <div class="item-title item-label">Nombre</div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="Tu Nombre"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div> 
+                    <div class="item-inner">
+                    <div class="item-title item-label">Apellido</div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="Tu Apellido"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div> 
+                    <div class="item-inner">
+                    <div class="item-title item-label">Documento</div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="Especificar documento"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div>
+                    <div class="item-inner">
+                    <div class="item-title item-label">Numero de documento</div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="CDI o DNI"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div> 
+                    <div class="item-inner">
+                    <div class="item-title item-label">Email</div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="Tu email"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div> 
+                    <div class="item-inner">
+                    <div class="item-title item-label">Celular</div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="Numero de celular"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div>
+                    <div class="item-inner">
+                    <div class="item-title item-label">Nacionalidad</div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="Tu pais"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div>
+                    <div class="item-inner">
+                    <div class="item-title item-label">Estado</div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="Your name"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div>
+                    <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                    <input type="password" id="#" placeholder="Tu Contraseña"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div>
+                </ul>
+             <p class="segmented segmented-raised segmented-round"><!-- Aca van los botones, hacer una validacion de campos que sean correctos -->
+              <!-- boton del menu principal -->
+              <a href="/saldo/" class="button button-round item-content item-link">Multar</a>
+              <!-- boton que te lelva de nuevo al login -->
+              <a href="//" class="button button-round item-content item-link">Cancelar</a>
+          </p>
+        </div>
+      </div>
+        
+      <!-- Pagina de consulta de autos estacionados -->     
+      <div id="tab-2" class="page-content tab">
+        <div class="block">
+          <font align="center"><h2>Editar Autos</h2></font>
+            <!-- Campo donde se agrega la zona -->
+                    <div class="item-inner">
+                    <div class="item-title item-label">Zona </div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="Escribir zona"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+            <!-- Campo donde se agrega la chapa -->             
+                    </div>
+                    <div class="item-inner">
+                    <div class="item-title item-label">Chapa </div>
+                    <div class="item-input-wrap">
+                    <input type="text" id="#" placeholder="Ej: ABC 123"><hr><!-- aca para la base de datos le cambio el ID -->
+                    </div>  
+                    </div>
+            <!-- Botones --> 
+             <p class="segmented segmented-raised segmented-round">
+              <a href="#" id="#" class="button button-round item-content">Zona</a>
+              <a href="#" id="#" class="button button-round item-content">Chapa</a>
+                <a href="#" id="#" class="button button-round item-content">Todos</a>
+          </p>
+            <!-- Tabla donde se tienen que mostrar las consultas -->
+             <div class="data-table">
+                   <table>
+                       <thead>
+                           <tr><!-- Fila principal de Titulos -->
+                               <th class="label-cell">Lote</th>
+                               <th class="label-cell">Entrada</th>
+                               <th class="numeric-cell">Salida</th>
+                               <th class="label-cell">Chapa</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr><!-- Aca se tiene que cargar dinamicamente las consultas -->
+                               <td class="label-cell">A23</td>
+                               <td class="numeric-cell">14:01</td>
+                               <td class="numeric-cell">15:30</td>
+                               <td class="numeric-cell">ABC123</td>
+                           </tr>
+                          
+                       </tbody>
+                   </table>
+                </div>
+           
+            
+        </div>
+      </div>
+      
+      <!-- Pagina de vista de otros -->     
+      <div id="tab-3" class="page-content tab">
+        <div class="block">
+         
+           <font align="center"><h2>Facturas</h2></font>  
+           
+      <!-- Tabla de visualizacion de las facturas --> 
+            <!-- Abajo se tiene que poner un total de la sumatoria de gastos --> 
+            <div class="data-table">
+                   <table>
+                       <thead>
+                           <tr><!-- Fila principal de Titulos --> 
+                               <th class="label-cell">Fecha</th>
+                               <th class="numeric-cell">Tiempo</th>
+                               <th class="numeric-cell">Guaranies</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr><!-- Aca se tiene que cargar dinamicamente las facturas --> 
+                               <td class="label-cell">22-04-2019</td>
+                               <td class="numeric-cell">00:30</td>
+                               <td class="numeric-cell">10.000</td>
+                           </tr>
+                          
+                       </tbody>
+                   </table>
+                </div>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+</div>    
+           
+ 
+      
+  </div>
+</div>
+</template>
+<script>
+export default {};
+</script>
