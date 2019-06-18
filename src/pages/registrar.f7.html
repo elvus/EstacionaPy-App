@@ -1,93 +1,82 @@
 <template>
-<div class="page" data-name="about">
-  <div class="navbar" style="background-color: #13BC78">
-    <div class="navbar-inner sliding">
-      <div class="left"><!-- Aca se decide donde se ubica la flechita de regreso, en este caso hacia la izquierda --> 
-        <a href="#" class="link back">
-          <font color="white">
-          <i class="icon icon-back"></i><!-- cual icono se utilizara--> 
-            <span class="if-not-md">Back</span></font>
-        </a>
+  <div class="page no-navbar no-toolbar no-swipeback">
+  <div class="page-content login-screen-content">
+    <div class="login-screen-title">Registrarse</div>
+    <form>
+      <div class="list">
+        <ul>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Usuario</div>
+              <div class="item-input">
+                <input type="text" name="username" placeholder="Usuario">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Contraseña</div>
+              <div class="item-input">
+                <input type="password" name="password" placeholder="Contraseña">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Nombre</div>
+              <div class="item-input">
+                <input type="text" name="nombre" placeholder="Nombre">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Apellido</div>
+              <div class="item-input">
+                <input type="text" name="apellido" placeholder="Apellido">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Documento</div>
+              <div class="item-input">
+                <input type="text" name="documento" placeholder="Nro de Documento">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Correo</div>
+              <div class="item-input">
+                <input type="email" name="email" placeholder="Correo">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Celular</div>
+              <div class="item-input">
+                <input type="text" name="celular" placeholder="Celular">
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <!-- Titulo de la pagina -->  
-      <div class="title"><font color="white"><h3> Registro</h3></font></div>
-    </div>
-  </div>
-    
-  <div class="page-content">
-                <!-- Contenido de la pagina Registro -->
-                <ul>
-                    <div class="item-inner">
-                    <div class="item-title item-label">Nombre</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="Tu Nombre"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div> 
-                    <div class="item-inner">
-                    <div class="item-title item-label">Apellido</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="Tu Apellido"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div> 
-                    <div class="item-inner">
-                    <div class="item-title item-label">Documento</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="CDI o DNI"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div>
-                    <div class="item-inner">
-                    <div class="item-title item-label">Numero de documento</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="Ej: 1234567"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div> 
-                    <div class="item-inner">
-                    <div class="item-title item-label">Email</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="ejemplo@gmail.com"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div> 
-                    <div class="item-inner">
-                    <div class="item-title item-label">Celular</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="Ej: 0975123456"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div>
-                    <div class="item-inner">
-                    <div class="item-title item-label">Nacionalidad</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="Tu pais"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div>
-                    <div class="item-inner">
-                    <div class="item-title item-label">Ciudad</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="Encarnacion"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div>
-                    <div class="item-inner">
-                    <div class="item-title item-label">Password</div>
-                    <div class="item-input-wrap">
-                    <input type="password" id="#" placeholder="Tu Contraseña"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div>
-                    
-                </ul>
-                  <div class="block">
-         
-          <p class="segmented segmented-raised segmented-round"><!-- Aca van los botones, hacer una validacion de campos que sean correctos -->
-              <!-- boton del menu principal -->
-              <a href="/saldo/" class="button button-round item-content item-link">Registrarse</a>
-              <!-- boton que te lelva de nuevo al login -->
-              <a href="//" class="button button-round item-content item-link">Login</a>
-          </p>
-     
-           
-     </div>
-      
+      <div class="list">
+        <ul>
+          <li><a href="#" class="item-link list-button color-black">Registrase</a></li>
+        </ul>
+        <div class="block-footer">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p><a href="/" class="close-login-screen">Salir</a></p>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
 </template>
+
 <script>
-export default {};
+  export default {}
 </script>

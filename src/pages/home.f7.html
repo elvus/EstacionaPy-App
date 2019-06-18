@@ -1,56 +1,43 @@
 <template>
-  <div class="page" data-name="home">
-      
-    <!-- Es el Navbar -->
-    <div class="navbar" style="background-color: #13BC78"><!-- Color del Nav-->
-      <div class="navbar-inner">
-       
-        <div class="title "><font color="white" align="center"> EstacionaPy</font></div><!-- EL nombre en el navbar se pone aca-->
-       
+  <div class="page no-navbar no-toolbar no-swipeback">
+  <div class="page-content login-screen-content">
+    <div class="login-screen-title">EstacionaPy</div>
+    <form>
+      <div class="list">
+        <ul>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Usuario</div>
+              <div class="item-input">
+                <input type="text" name="username" placeholder="Usuario">
+              </div>
+            </div>
+          </li>
+          <li class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Contraseña</div>
+              <div class="item-input">
+                <input type="password" name="password" placeholder="Contraseña">
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
-    <!-- Finish Navbar -->  
-    
-    <!-- El cuerpo de mi .f7.html principal -->
-    <div class="page-content">
-     <font align="center"><h2>Login</h2></font><!-- Titulo de la pagina -->
-   <ul>
-                    <div class="item-inner">
-                    <div class="item-title item-label">Nombre</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="Tu Nombre"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div> 
-                
-                    <div class="item-inner">
-                    <div class="item-title item-label">Password</div>
-                    <div class="item-input-wrap">
-                    <input type="password" id="#" placeholder="Password"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                    </div>
-                    
-                </ul>
-            
-    
-        
-      <div class="block">
-         
-          <p class="segmented segmented-raised segmented-round">
-              <!-- Aca van los botones, hacer una validacion de usuario para que entre en el menu principal -->
-              <!-- boton del menu principal -->
-              <a href="/menu/" class="button button-round item-content item-link">Login</a>
-              <!-- Te lleva a una pagina de registro que seria registrar.f7.html-->
-              <a href="/registrar/" class="button button-round item-content item-link">Registrarse</a>
-          </p>
-     
-           
-     </div> 
-  
-</div>
-       
+      <div class="list">
+        <ul>
+          <li><a href="/menu/" class="item-link list-button">Ingresar</a></li>
+          <li><a href="/registrar/" class="item-link list-button color-black">Registrase</a></li>
+        </ul>
+        <div class="block-footer">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p><a href="#" class="close-login-screen">Salir</a></p>
+        </div>
+      </div>
+    </form>
   </div>
+</div>
 </template>
 
 <script>
-export default {}
+  export default {}
 </script>
