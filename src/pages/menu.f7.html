@@ -1,62 +1,36 @@
 <template>
 <div class="page" data-name="about">
   <div class="navbar" style="background-color: #13BC78"><!-- Color del Nav-->
-      <div class="navbar-inner">
-        <div class="left"><!-- Icono que abre el nav izquierdo, si quiero uno derecho cambio por rigth-->
-          <a href="#" class="link icon-only panel-open" data-panel="left">           
-              <i class="icon material-icons if-md"><font color="white"> menu</font></i>
-          </a>
-        </div>
-          <div class="title sliding"><font color="white"> EstacionaPy</font></div><!-- EL nombre en el navbar se pone aca-->
-          <div class="right">
-        <a href="#" class="link back">
-        <font color="white">  <i class="icon icon-back"></i>
-            <span class="if-not-md">Back</span></font>
+    <div class="navbar-inner">
+      <div class="left"><!-- Icono que abre el nav izquierdo, si quiero uno derecho cambio por rigth-->
+        <a href="#" class="link icon-only panel-open" data-panel="left">           
+        <i class="icon material-icons if-md"><font color="white"> menu</font></i>
         </a>
       </div>
-        
-       
+      <div class="title sliding">
+        <font color="white"> EstacionaPy</font>
+      </div><!-- EL nombre en el navbar se pone aca-->
+      <div class="right">
+        <a href="#" class="link back">
+        <font color="white">  <i class="icon icon-back"></i>
+          <span class="if-not-md">Back</span>
+        </font>
+        </a>
       </div>
     </div>
+  </div>
   <div class="page-content">
-     <font align="center"><h2>Principal</h2></font>
-               
-      <div class="card card-outline">
-  <div class="card-header">Card header</div>
-  <div class="card-content card-content-padding">Card with header and footer. Card headers are used to display card titles and footers for additional information or just for custom actions.</div>
-  <div class="card-footer">Card Footer</div>
-</div>
-      
-              <ul>
-               
-                    <div class="item-title item-label">Nombre</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="Tu Nombre"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                   <hr>
-                
-                    <div class="item-title item-label">Apellido</div>
-                    <div class="item-input-wrap">
-                    <input type="text" id="#" placeholder="Tu Apellido"><hr><!-- aca para la base de datos le cambio el ID -->
-                    </div>  
-                   
-                    
-                </ul>
-      
-     
-      
-     
-                  <div class="block">
-                     <p class="segmented segmented-round">
-                         <button class="button button-round button-outline">Registrar</button>
-                         <button class="button button-round button-outline popup-close">Cancelar</button>
-                      </p>
-                  </div>
-      
-      
-   
-      
-      
+    <div class="card card-outline">
+      <div class="card-header">¡Bienvenido!</div>
+      <div class="card-content card-content-padding">Aun no ha estacionado su auto :)</div>
+      <div class="card-footer">Tarifa: 0 Gs.</div>
+    </div>      
+    <div class="block">
+      <p class="segmented segmented-round">
+      <button class="button button-round button-outline">Registrar</button>
+      <button class="button button-round button-outline popup-close">Cancelar</button>
+    </p>
+    </div>
   </div>
 </div>
 </template>

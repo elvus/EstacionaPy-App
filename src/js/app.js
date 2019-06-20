@@ -42,8 +42,18 @@ $$('#my-login-screen .login-button').on('click', function () {
   var password = $$('#my-login-screen [name="password"]').val();
 
   // Close login screen
-  app.loginScreen.close('#my-login-screen');
+ // app.loginScreen.close('#my-login-screen');
 
   // Alert username and password
-  app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
+  if (!username || !password) {
+    app.dialog.alert("Por favor Ingrese un Usuario y una Contraseña");
+  }else{
+    app.request.postJSON('http://localhost:3000/token/generate-token',{
+      username: username,
+      password: password
+    }, function(request){
+      localStorage.setItem('token',request.result.token);
+      app.views.main.router.navigate('/menu/', {reloadCurrent: true});
+    })
+  }
 });
