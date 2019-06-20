@@ -52,8 +52,12 @@ $$('#my-login-screen .login-button').on('click', function () {
       username: username,
       password: password
     }, function(request){
-      localStorage.setItem('token',request.result.token);
-      app.views.main.router.navigate('/menu/', {reloadCurrent: true});
+      if(request.success===200){
+        localStorage.setItem('token',request.result.token);
+        app.views.main.router.navigate('/menu/', {reloadCurrent: true});
+      }else{
+        app.dialog.alert("¡Usuario o Contraseña invalidos!")
+      }
     })
   }
 });
