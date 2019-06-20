@@ -1,6 +1,6 @@
 <template>
-  <div class="page no-navbar no-toolbar no-swipeback">
-    <div class="page-content login-screen-content">
+  <div class="page no-navbar no-toolbar no-swipeback" data-page="register">
+    <div id="register-screen" class="page-content login-screen-content">
       <div class="login-screen-title">Registrarse</div>
       <form>
         <div class="list">
@@ -73,7 +73,7 @@
         </div>
         <div class="list">
           <ul>
-            <li><a href="#" class="item-link list-button">Registrase</a></li>
+            <li><a class="item-link list-button register-button">Registrase</a></li>
           </ul>
           <div class="block-footer">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -86,5 +86,28 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+      methods: {
+        fetchStories() {
+          var self = this;
+          var app = self.$app;
+          //var url = self.endpoint.url.substring(0, self.endpoint.url.lastIndexOf('/') + 1);
+          app.dialog.alert("Por favor Ingrese un Usuario y una Contraseña");
+          /*app.request.json(url + self.lastPage + '.json', (items) => {
+            var stories = self.stories.concat(items);
+            self.$setState({
+              stories: stories,
+              lastPage: self.lastPage + 1,
+              allowInfinite: true
+            });
+          });*/
+        }
+      },
+      on: {
+        pageInit() {
+          var self = this;
+          self.fetchStories();
+        },
+      }
+    };
 </script>
